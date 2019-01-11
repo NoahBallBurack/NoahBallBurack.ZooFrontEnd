@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noah Ball-Burack's Zoo</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<img src="shutterstock_244338682.jpg">
+
+<input type="text" id="animalName" placeholder="Name your animal here" class="w3-hover-gray">
+<select id="animalType" class="w3-hover-gray">
+    <option disabled selected>Select animal type here</option>
+    <option value="Tiger">Tiger</option>
+    <option value="Bear">Bear</option>
+    <option value="Giraffe">Giraffe</option>
+    <option value="Unicorn">Unicorn</option>
+    <option value="Bee">Bee</option>
+</select>
+<button id="createAnimal" onclick="createAnimal()" class="w3-round-large w3-hover-black purpleText">Create Animal</button>
+
+
+
+<div id="secondRow">
+    <select id="foodChoice" class="w3-hover-gray">
+        <option disabled selected>Select what you would like to feed your animals</option>
+        <option>meat</option>
+        <option>fish</option>
+        <option>marshmallows</option>
+        <option>leaves</option>
+        <option>pollen</option>
+    </select>
+    <button id="feed" onclick="feedAnimals()" class="w3-round-large w3-hover-black purpleText">Feed</button>
+</div>
+
+<table id="thirdRow">
+    <tr>
+        <td id="instructions" class="purpleText">Click on one of the names below to remove it</td>
+    </tr>
+    <tr>
+        <td>
+            <table id="animalList" class="purpleText"></table>
+        </td>
+    </tr>
+</table>
+
+<table id="fourthRow">
+    <tr>
+        <td>
+            <span id="yourFeed" class="purpleText">Your Feed</span>
+        </td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>
